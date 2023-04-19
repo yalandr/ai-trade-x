@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AI TradeX</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon/favicon.png"/>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <main class="main">
+            <header class="header" id="header">
+                <div class="container flex center just-center">
+                    <img src="assets/img/svg/header-logo.svg" width="338" height="133" alt="Logo" class="header-logo-img" onclick="scrollToElem('#formWrapper')" loading="lazy">
+                    <img src="assets/img/svg/white-menu-burger.svg" width="24" height="16" alt="Menu" class="burger-menu-icon" loading="lazy">
+                </div>
+                <nav class="navigation">
+                    <img src="assets/img/close-dark.png" width="24" height="24" alt="Close" class="mob-menu-close">
+                    <ul class="nav-menu-list flex center just-center">
+                        <li class="nav-menu-list-item" onclick="scrollToElem('#release')">
+                            Newest Release 
+                        </li>
+                        <li class="nav-menu-list-item" onclick="scrollToElem('#tools')">
+                            Investing Tools
+                        </li>
+                        <li class="nav-menu-list-item" onclick="scrollToElem('#partners')">
+                            Partners
+                        </li>
+                        <li class="nav-menu-list-item" onclick="scrollToElem('#registrationForm')">
+                            Registration Form
+                        </li>
+                    </ul>
+                </nav>
+                <div class="navigation-underlay"></div>
+            </header>
+            <section class="hero-section">
+                <div class="container hero-main-content flex center just-between">
+                    <div class="hero-content-part">
+                        <h1 class="main-heading text-white">
+                            The Must Have Stock Scanner for All Active Traders
+                        </h1>
+                        <h2 class="main-subheading">
+                            Invest in the future with AI, earn today with ease!
+                        </h2>
+                        <div class="hero-video-wrapper">
+                            <video src="assets/video/hero-video.mp4" width="auto" height="100%" loop muted autoplay playsinline class="hero-video"></video>
+                        </div>
+                    </div>
+                    <div class="hero-form-part">
+                        <div class="form-wrapper" id="formWrapper">
+                            <h2>
+                                Free registration
+                            </h2>
+                            <form action="thankyou.html" onsubmit="event.preventDefault(); formSubmission()">
+                                <p class="form-disclaimer">
+                                    *This form is here only for layout demonstration. The entered data is not sent anywhere.
+                                </p>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input name" placeholder="Your Name">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input lastname" placeholder="Your Lastname">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input email" placeholder="Your Email">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input phone" placeholder="Your Phone">
+                                </div>
+                                <div class="required-fields">
+                                    Please fill in all the fields
+                                </div>
+                                <div class="input-wrap">
+                                    <button>Register now*</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-white text-center">
+                    <h4 class="hero-decsription-heading uppercase">
+                        Finds Hidden Opportunities and Helps to Manage Risk
+                    </h4>
+                    <p class="hero-description-text">
+                        Charting - Stock Scanning - Real-time Alerts - Backtesting - Artificial Intelligence - Entry & Exit Signals - Performance Tracking - Live Trading - Risk Analysis - Market Breadth - News - Cloud Storage - Education
+                    </p>
+                    <div class="hero-made-in flex center just-center">
+                        Made in the USA 
+                        <img src="assets/img/usa-small.png" width="42" height="20" alt="USA Flag" class="usa-flag-small-img" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="about-section" id="release">
+                <div class="container text-center">
+                    <h4 class="section-preheading">
+                        Newest Release
+                    </h4>
+                    <h2 class="section-heading">
+                        Real-Time Stock Racing
+                    </h2>
+                    <p class="card-text">
+                        (Patent Pending)
+                    </p>
+                    <div class="about-video-wrapper video">
+                        <video src="assets/video/about-video.mp4" width="100%" poster="assets/img/poster.png" controls controlsList="nodownload" loop playsinline class="about-video"></video>
+                        <div class="play-btn"></div>
+                    </div>
+                    <p class="section-text">
+                        Our Stock Racing technology is a brand new visual perspective on scanning the market. Welcome to the future of stock scanning and AI Trade X is the only company offering this exceptionally powerful tool.
+                    </p>
+                    <button class="btn modal-call">
+                        Register now
+                    </button>
+                </div>
+            </section>
+            <section class="benefits-section" id="tools">
+                <div class="container text-center">
+                    <h4 class="section-preheading">
+                        The most advanced investing tools
+                    </h4>
+                    <h2 class="section-heading">
+                        Helping all levels of investors make better market decisions
+                    </h2>
+                    <p class="section-text">
+                        AI Trade X software helps traders find the best setups in the market right now. Looking to test the waters with AI Trade X? Ready to harness the power of AI, or better manage your clients money at a professional level? We have you covered with user levels for everyone.
+                    </p>
+                    <div class="benefits-cards-wrapper flex wrap start just-center">
+                        <div class="benefit-card text-center">
+                            <img src="assets/img/svg/note.svg" width="72" height="72" alt="Note" class="benefit-card-img" loading="lazy">
+                            <h4>Simulated Trading</h4>
+                            <p class="card-text">
+                                Simulated Trading is now available with both Standard and Premium subscriptions. Gain confidence and learn how to take action in the markets.
+                            </p>
+                        </div>
+                        <div class="benefit-card text-center">
+                            <img src="assets/img/svg/cpu.svg" width="72" height="72" alt="CPU" class="benefit-card-img" loading="lazy">
+                            <h4>Artificial Intelligence</h4>
+                            <p class="card-text">
+                                A.I. powered automated trading is here! When you activate a AI Trade X Premium subscription you’ll have the power of Holly the A.I. available to manage your trading cycle.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn modal-call">
+                        Register now
+                    </button>
+                </div>
+            </section>
+            <div class="sections-divider"></div>
+            <section class="partners-section" id="partners">
+                <div class="container">
+                    <h2 class="section-heading text-center">
+                        Leading brokers and partners use AI Trade X technology, shouldn’t you?
+                    </h2>
+                    <div class="partners-cards-wrapper flex start just-center text-center">
+                        <div class="partners-card">
+                            <img src="assets/img/interactive-brokers.png" height="76" width="auto" alt="Interactive Brokers Logo" class="partners-card-img" loading="lazy">
+                            <p class="card-text">
+                                The IBKR integration offers trading and portfolio management with low-cost trades directly from AI Trade X.
+                                <br><br>
+                                Click below to learn more about our integration with Interactive Brokers.
+                            </p>
+                            <button class="btn modal-call">
+                                Learn more
+                            </button>
+                            <p class="partners-card-disclaimer etxt-center">
+                                Interactive Brokers is not affiliated with Trade-Ideas and does not endorse or recommend any information or advice provided by Trade-Ideas.
+                            </p>
+                        </div>
+                        <div class="partners-card">
+                            <img src="assets/img/trade-tv-live.png" height="76" width="auto" alt="Trader TV Live Logo" class="partners-card-img" loading="lazy">
+                            <p class="card-text">
+                                ive from the DTTW trading floor! TRADERS with 40+ years of combined trading experience trade real money for real profits, and sometimes loss. 
+                                <br><br>
+                                Our multi-million dollar TV studio broadcasts the first and only professional Trading Show on YouTube Live.
+                                <br><br>
+                                Click below to learn more and save 15% off Trade Ideas
+                            </p>
+                            <button class="btn modal-call">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info-section">
+                <div class="container flex column center just-center">
+                    <img src="assets/img/extrade.png" width="347" height="auto" class="extrade-logo-img" alt="Extrade" loading="lazy">
+                    <div class="partners-row first flex center wrap just-center">
+                        <img src="assets/img/daytradingz.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/nasdaq.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/eze-software.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/sterling.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/e-signal.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                    </div>
+                    <div class="partners-row second flex center wrap just-center">
+                        <img src="assets/img/trade-pool.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/day-trade.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/nyse.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/bear-bull.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                        <img src="assets/img/bulls-on-wall-street.png" width="auto" height="50" alt="Partner Logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="article-wrapper flex center first">
+                    <img src="assets/img/data-analysis-img.png" alt="People working" class="article-img" loading="lazy">
+                    <div class="article-text">
+                        <h2 class="section-heading">
+                            Data Analysis
+                        </h2>
+                        <p class="section-text">
+                            AI can be used to analyze large volumes of financial data in real-time, including market trends, economic indicators, and company financial reports. This data can be analyzed to identify patterns and trends that would be difficult for humans to identify. 
+                            <br><br>
+                            Machine learning algorithms can be used to analyze historical data to predict future market trends, and neural networks can be used to identify patterns in market data that could indicate future market movements.
+                            <br><br>
+                            In addition, AI can be used to analyze news articles and social media feeds to determine how these factors can affect the market. Sentiment analysis algorithms can be used to determine the overall sentiment of news articles and social media feeds, which can help traders to make decisions on when to buy or sell stocks.
+                        </p>
+                    </div>
+                </div>
+                <div class="article-wrapper to-right flex center just-end">
+                    <div class="article-text">
+                        <h2 class="section-heading">
+                            Decision Making
+                        </h2>
+                        <p class="section-text">   
+                            Once AI has analyzed market data and identified trends, traders can use this information to make decisions on which stocks to buy or sell. AI can be used to provide recommendations on which stocks are likely to perform well, and which stocks are likely to underperform. This can help traders to make informed decisions and avoid making costly mistakes.
+                            <br><br>
+                            In addition, AI can be used to execute trades automatically, based on pre-defined rules and algorithms. This can help traders to take advantage of market trends quickly and efficiently, without the need for manual intervention.
+                        </p>
+                    </div>
+                    <img src="assets/img/decision-making-img.png" alt="Laptop" class="article-img" loading="lazy">
+                </div>
+                <div class="article-wrapper flex center">
+                    <img src="assets/img/monitoring-img.png" alt="Touchscreen" class="article-img" loading="lazy">
+                    <div class="article-text">
+                        <h2 class="section-heading">
+                            Monitoring and Management
+                        </h2>
+                        <p class="section-text">
+                            AI can be used to monitor the performance of investment portfolios in real-time. This allows traders to make informed decisions on when to buy or sell stocks, and to adjust their investment strategies as needed. In addition, AI can be used to manage risk by setting stop-loss orders and other risk-management strategies. This can help traders to avoid significant losses and protect their investment portfolios.
+                            <br><br>
+                            Overall, AI provides traders with a powerful tool for analyzing financial data, making informed decisions, and managing investment portfolios. By using AI to supplement their own analysis, traders can increase their chances of success on financial markets and earn significant profits over time.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="lower-form-section" id="registrationForm">
+                <div class="container flex start just-between">
+                    <div class="text-content">
+                        <img src="assets/img/svg/logo-blue.svg" width="338" height="133" alt="Logo" class="lower-logo-img" onclick="scrollToElem('#header')">
+                        <h2 class="lower-section-heading uppercase">
+                            Make investing easy and convenient with <span class="text-strong">AI Trade X</span>
+                        </h2>
+                        <p class="section-text">
+                            Our artificial intelligence ensures maximum profit, minimal risks, and less time and effort spent!
+                        </p>
+                        <div class="lower-made-in flex center">
+                            <img src="assets/img/usa-bigger.png" width="84" height="40" alt="USA Flag" class="usa-flag-bigger-img" loading="lazy">
+                            Made in the USA 
+                        </div>
+                    </div>
+                    <div class="lower-form-part">
+                        <div class="form-wrapper" id="formWrapperLower">
+                            <h2>
+                                Free registration
+                            </h2>
+                            <form action="thankyou.html" onsubmit="event.preventDefault(); formSubmission()">
+                                <p class="form-disclaimer">
+                                    *This form is here only for layout demonstration. The entered data is not sent anywhere.
+                                </p>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input name" placeholder="Your Name">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input lastname" placeholder="Your Lastname">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input email" placeholder="Your Email">
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" class="form-input phone" placeholder="Your Phone">
+                                </div>
+                                <div class="required-fields">
+                                    Please fill in all the fields
+                                </div>
+                                <div class="input-wrap">
+                                    <button>Register now*</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex center just-between">
+                <div class="copyright uppercase">
+                    ©<span class="year">2023</span> AI TRADE X
+                </div>
+                <div class="footer-policies-links flex wrap center just-center">
+                    <a href="javascript:void(0)" data-name="policy" class="alterlink">Privacy policy</a>
+                    <a href="javascript:void(0)" data-name="terms" class="alterlink">Terms of use</a>
+                </div>
+            </div>
+        </footer>
+        <!-- MODAL -->
+        <div class="modal form-modal">
+            <img src="assets/img/close.png" alt="close" class="close-icon">
+            <div class="modal-content">
+                <div class="form-wrapper">
+                    <h2>
+                        Free registration
+                    </h2>
+                    <form action="thankyou.html" onsubmit="event.preventDefault(); formSubmission()">
+                        <p class="form-disclaimer">
+                            *This form is here only for layout demonstration. The entered data is not sent anywhere.
+                        </p>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input name" placeholder="Your Name">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input lastname" placeholder="Your Lastname">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input email" placeholder="Your Email">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" class="form-input phone" placeholder="Your Phone">
+                        </div>
+                        <div class="required-fields">
+                            Please fill in all the fields
+                        </div>
+                        <div class="input-wrap">
+                            <button>Register now*</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

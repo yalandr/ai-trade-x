@@ -1,0 +1,1020 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-bg-color: #F9F9F9;
+    --dark-bg-color: #183056;
+    --brand-color: #F8AE44;
+    --font-primary: 'Inter';
+    --box-border-radius: 12px;
+    --alert-color: #E51D37;
+}
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: var(--font-primary), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--main-bg-color);
+}
+.main-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+    position: relative;
+}
+ul li {
+    list-style: none;
+}
+ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+input, textarea {
+    outline: none;
+    font-family: inherit;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+.container {
+    width: 88%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.section-preheading {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.22;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+.section-heading {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.card-text {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+.section-text {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #000000;
+}
+.sections-divider {
+    width: 100%;
+    height: 12px;
+    background: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 3;
+}
+.text-white {
+    color: #fff;
+}
+.text-blue {
+    color: var(--brand-color);
+}
+.text-strong {
+    font-weight: 900;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.flex {
+    display: flex;
+}
+.center {
+    align-items: center;
+}
+.start {
+    align-items: flex-start;
+}
+.end {
+    align-items: end;
+}
+.just-center {
+    justify-content: center;
+}
+.just-between {
+    justify-content: space-between;
+}
+.just-start {
+    justify-content: flex-start;
+}
+.just-end {
+    justify-content: flex-end;
+}
+.column {
+    flex-direction: column;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    max-width: 250px;
+    min-height: 70px;
+    padding: 1.2rem;
+    background: var(--brand-color);
+    border-radius: var(--box-border-radius);
+    border: 0;
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--dark-bg-color);
+    text-transform: uppercase;
+    transition: all ease 0.2s;
+}
+.btn.btn-white {
+    background: #fff;
+    color: #212121;
+}
+.btn:hover {
+    background: #db9431;
+}
+.btn.btn-white:hover {
+    background: #ddd;
+}
+.btn:active {
+    transform: scale(0.98)
+}
+
+
+
+/* HEADER */
+.header {
+    background-color: var(--dark-bg-color);
+}
+.header-logo-img {
+    cursor: pointer;
+}
+.burger-menu-icon {
+    display: none;
+}
+.navigation {
+    padding: 18px;
+    background-color: var(--brand-color);
+}
+.mob-menu-close {
+    display: none;
+}
+.nav-menu-list {
+    color: var(--dark-bg-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.nav-menu-list-item {
+    cursor: pointer;
+    margin: 0 1.5rem;
+}
+.navigation-underlay {
+    display: none;
+    transition: all ease 0.3s;
+}
+
+
+/* HERO */
+.hero-section {
+    padding: 4rem 0;
+    background-color: var(--dark-bg-color);
+}
+.hero-content-part {
+    width: 66%;
+    max-width: 948px;
+}
+.hero-content-part {
+    margin-right: 1rem;
+}
+.main-heading {
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.main-subheading {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.22;
+    color: var(--brand-color);
+    margin-top: 1rem;
+}
+.hero-video-wrapper {
+    margin-top: 3rem;
+    border-radius: var(--box-border-radius);
+    overflow: hidden;
+}
+.hero-video {
+    border-radius: var(--box-border-radius);
+}
+
+/* FORM */
+.hero-form-part {
+    width: 32%;
+    max-width: 458px;
+}
+.form-wrapper {
+    background-color: #fff;
+    padding: 2rem 1.6rem;
+    border-radius: var(--box-border-radius);
+}
+.form-wrapper h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #161616;
+}
+.form-disclaimer {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+}
+.form-wrapper form {
+    font-family: var(--font-primary), sans-serif;
+}
+.form-wrapper .input-wrap {
+    margin: 16px 0;
+}
+.form-wrapper .input-wrap input {
+    width: 100%;
+    height: 60px !important;
+    padding: 0 1.2rem;
+    border: 1px solid rgba(11, 22, 51, 0.2) !important;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-wrapper .input-wrap input::-webkit-input-placeholder {
+    color: #494949;
+}
+.form-wrapper .input-wrap input::-moz-placeholder {
+    color: #494949;
+}
+.form-wrapper .input-wrap input:-ms-input-placeholder {
+    color: #494949;
+}
+.form-wrapper .input-wrap input::-ms-input-placeholder {
+    color: #494949;
+}
+.form-wrapper .input-wrap input::placeholder {
+    color: #494949;
+}
+.form-wrapper .input-wrap input:focus {
+    border: 1px solid rgb(102, 140, 245) !important;
+}
+.form-wrapper .input-wrap input.valid,
+.form-wrapper .input-wrap input.valid:focus {
+    border: 1px solid rgb(102, 245, 171) !important;
+}
+.form-wrapper .input-wrap .vue-tel-input {
+    border-radius: 5px;
+    border: 1px solid rgba(11, 22, 51, 0.2);
+}
+.form-wrapper .input-wrap .vue-tel-input input {
+    border-radius: 0 5px 5px 0;
+    border: none !important;
+}
+.form-wrapper .input-wrap .vue-tel-input .vti__dropdown {
+    border-radius: 5px 0 0 5px;
+}
+.form-wrapper .input-wrap .vue-tel-input .vti__dropdown .vti__dropdown-item {
+    color: #333;
+}
+.form-wrapper .checkbox-wrap {
+    display: flex;
+    margin: 13px 0;
+}
+.form-wrapper .checkbox-wrap input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+.form-wrapper .checkbox-wrap input::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    background-color: #FDFDFD;
+    border: 1px solid #C8C8C8;
+    border-radius: 2px;
+}
+.form-wrapper .checkbox-wrap input:checked::before {
+    content: '\2713';
+    color: #FF9900;
+}
+.form-wrapper .checkbox-wrap label {
+    font-size: 14px;
+    color: #111111;
+}
+.form-wrapper .checkbox-wrap label .alterlink {
+    font-weight: 700;
+    color: #111;
+}
+.required-fields {
+    border-radius: 6px;
+    border: 2px solid var(--alert-color);
+    color: var(--alert-color);
+    background-color: #ebc2ab;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    transform: scale(0);
+    height: 0;
+    transition: .3s;
+}
+.required-fields.visible {
+    padding: 1rem;
+    margin: 8px 0;
+    transform: scale(1);
+    height: auto;
+}
+.form-wrapper .input-wrap button {
+    width: 100%;
+    min-height: 70px;
+    background-color: var(--brand-color);
+    border: 0;
+    color: var(--dark-bg-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: var(--box-border-radius);
+    transition: all ease 0.2s;
+}
+.form-wrapper .input-wrap button:hover {
+    background-color: #db9431;
+}
+.form-wrapper .input-wrap button:active {
+    transform: scale(0.98);
+}
+
+/* HERO DESCRIPTION */
+.hero-decsription-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.22;
+    margin-top: 3rem;
+}
+.hero-description-text {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    max-width: 985px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.hero-made-in {
+    margin-top: 3rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.usa-flag-small-img {
+    margin-left: 6px;
+}
+
+/* ABOUT */
+.about-section {
+    padding: 4rem 0;
+    background-color: var(--main-bg-color);
+}
+.about-video-wrapper {
+    max-width: 827px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    border-radius: var(--box-border-radius);
+}
+.about-video {
+    border-radius: var(--box-border-radius);
+}
+.video {
+    position: relative;
+}
+.video .play-btn {
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.video .play-btn::before {
+    content: "";
+    display: block;
+    width: 6.5rem;
+    height: 6.5rem;
+    background: url('../img/svg/play-btn.svg') no-repeat center/ contain;
+    cursor: pointer;
+    transition: .3s;
+}
+.video.play .play-btn::before {
+    opacity: 0;
+}
+.about-section .section-text {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+.about-section .btn {
+    margin-top: 3rem;
+}
+
+/* BENEFITS */
+.benefits-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+.benefits-section .section-heading {
+    max-width: 754px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.benefits-section .section-text {
+    max-width: 1032px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.benefits-cards-wrapper {
+    margin-top: 3rem;
+}
+.benefit-card {
+    width: 48%;
+    max-width: 352px;
+    margin: 0 2.8rem;
+}
+.benefit-card h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.22;
+    color: #000000;
+    margin: 1.5rem 0 2rem 0;
+}
+.benefit-card-text {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.16;
+    margin-top: 18px;
+}
+.benefits-section .btn {
+    margin-top: 5.9rem;
+}
+
+/* PARTNERS */
+.partners-section {
+    padding: 4rem 0;
+    background-color: var(--main-bg-color);
+}
+.partners-section .section-heading {
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners-card {
+    width: 48%;
+    max-width: 704px;
+    padding: 2rem;
+    margin: 0 1rem;
+}
+.partners-card .card-text {
+    max-width: 572px;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners-card .btn {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 18px;
+    min-height: 48px;
+    max-width: 151px;
+    margin-top: 2rem;
+}
+.partners-card-disclaimer {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #858585;
+    max-width: 440px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* INFO */
+.info-section {
+    padding: 4rem 0 0 0;
+    background: #FFF;
+}
+.extrade-logo-img {
+    width: 50% !important;
+    max-width: 347px;
+}
+.partners-row {
+    margin-top: 2rem;
+}
+.partners-row img {
+    margin: 0 1rem;
+}
+.article-wrapper {
+    margin-top: -6rem;
+}
+.article-wrapper.first {
+    margin-top: 0;
+}
+.article-img {
+    width: 54%;
+}
+.article-text {
+    width: 40%;
+    max-width: 678px;
+    margin-left: -2.5rem;
+}
+.article-text .section-text {
+    margin-top: 2rem;
+}
+.article-wrapper.to-right .article-text {
+    margin-left: 0;
+}
+
+/* LOWER FORM */
+.lower-form-section {
+    padding: 4rem 0;
+    background-color: var(--brand-color);
+}
+.text-content {
+    width: 60%;
+    max-width: 860px;
+    margin-right: 1rem;
+}
+.lower-logo-img {
+    cursor: pointer;
+}
+.lower-section-heading {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: var(--dark-bg-color);
+    margin-top: 1.5rem;
+}
+.text-content .section-text {
+    max-width: 715px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.lower-made-in {
+    margin-top: 5.5rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: var(--dark-bg-color);
+}
+.usa-flag-bigger-img {
+    margin-right: 1.5rem;
+}
+.lower-form-part {
+    width: 32%;
+    max-width: 458px;
+}
+.lower-form-part .form-wrapper .input-wrap button {
+    background-color: var(--dark-bg-color);
+    color: #fff;
+}
+.lower-form-part .form-wrapper .input-wrap button:hover {
+    background-color: #0e2852;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: var(--dark-bg-color);
+    padding: 1.5rem 0;
+}
+.copyright {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.38;
+    color: #EFEFEF;
+}
+.footer-policies-links .alterlink {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.38;
+    color: #EFEFEF;
+    margin: 0 1rem;
+    transition: all ease 0.2s;
+}
+.footer-policies-links .alterlink:hover {
+    color: #FFF;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    z-index: -3;
+    opacity: 0;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 2rem 0;
+    display: grid;
+    place-items: center center;
+    background-color: rgba(0,0,0,.58);
+    -webkit-backdrop-filter: blur(9px);
+            backdrop-filter: blur(9px);
+    transition: .4s;
+}
+.modal.active {
+    z-index: 101;
+    opacity: 1;
+}
+.modal .close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.modal-content {
+    width: 100%;
+    max-width: 500px;
+}
+.modal-content .license-img {
+    width: 100%;
+    height: auto;
+}
+.modal-content .form-wrapper {
+    max-width: unset;
+}
+
+/* POLICIES */
+.terms__text ul li {
+    list-style: disc inside;
+}
+
+
+/* MEDIA */
+@media screen and (max-width:1688px) {
+    .container {
+        max-width: 1180px;
+    }
+    .btn {
+        min-height: 60px;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .header-logo-img {
+        width: 14rem;
+        height: auto;
+    }
+    .navigation {
+        padding: 10px;
+    }
+    .nav-menu-list {
+        font-size: 1rem;
+    }
+    .hero-section {
+        padding: 3rem 0;
+    }
+    .main-heading {
+        font-size: 2.8rem;
+    }
+    .main-subheading {
+        font-size: 1.6rem;
+    }
+    .form-wrapper {
+        padding: 2rem 1.2rem;
+    }
+    .form-wrapper h2 {
+        font-size: 1.8rem;
+    }
+    .form-wrapper .input-wrap input {
+        height: 50px !important;
+        padding: 0 1.2rem;
+    }
+    .hero-decsription-heading {
+        font-size: 1.8rem;
+    }
+    .hero-description-text {
+        font-size: 1.1rem;
+        max-width: 860px;
+    }
+    .hero-made-in {
+        font-size: 0.85rem;
+    }
+    .about-section {
+        padding: 3rem 0;
+    }
+    .section-preheading {
+        font-size: 1.65rem;
+        margin-bottom: 1rem;
+    }
+    .section-heading {
+        font-size: 2.1rem;
+    }
+    .card-text {
+        font-size: 1rem;
+    }
+    .about-section .section-text {
+        max-width: 880px;
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
+    .benefits-section {
+        padding: 3rem 0;
+    }
+    .benefits-section .section-text {
+        max-width: 980px;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+    .benefit-card h4 {
+        font-size: 1.7rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+    .partners-card-img {
+        height: 55px;
+        width: auto;
+    }
+    .partners-card-disclaimer {
+        font-size: 0.85rem;
+        max-width: 400px;
+    }
+    .section-text {
+        font-size: 1rem;
+    }
+    .article-wrapper {
+        margin-top: -3.5rem;
+    }
+    .article-text .section-text {
+        margin-top: 1rem;
+    }
+    .article-text {
+        margin-left: -1.5rem;
+    }
+    .lower-form-section {
+        padding: 3rem 0;
+    }
+    .lower-logo-img {
+        width: 16rem;
+        height: auto;
+    }
+    .lower-section-heading {
+        font-size: 2.4rem;
+    }
+    .text-content .section-text {
+        max-width: 680px;
+        font-size: 1.2rem;
+    }
+    .lower-made-in {
+        margin-top: 4.5rem;
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+    .copyright,
+    .footer-policies-links .alterlink {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:1198px) {
+    .benefit-card-img {
+        width: 60px;
+        height: 60px;
+    }
+    .article-wrapper.first {
+        margin-top: 2rem;
+    }
+    .article-wrapper {
+        margin-top: 1rem;
+    }
+    .info-section {
+        padding: 3rem 0 3rem 0;
+    }
+    
+}
+
+@media screen and (max-width:998px) {
+    .header-logo-img {
+        width: 11rem;
+    }
+    .hero-main-content {
+        flex-direction: column;
+    }
+    .hero-content-part {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .hero-content-part {
+        width: 100%;
+        text-align: center;
+    }
+    .hero-form-part {
+        width: 100%;
+    }
+    .benefit-card {
+        margin: 0 2rem 3.5rem 2rem;
+    }
+    .benefit-card:last-child {
+        margin-bottom: 0;
+    }
+    .partners-row img {
+        margin: 0 1rem 1rem 1rem;
+    }
+    .article-wrapper {
+        flex-direction: column;
+    }
+    .article-img {
+        width: 100%;
+    }
+    .article-text {
+        width: 88%;
+        max-width: 678px;
+        margin-left: 0;
+    }
+    .article-wrapper.to-right {
+        flex-direction: column-reverse;
+    }
+    .lower-form-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-content {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .text-content .section-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lower-made-in {
+        justify-content: center;
+    }
+    .lower-form-part {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .nav-menu-list {
+        font-size: 0.9rem;
+    }
+    .nav-menu-list-item {
+        margin: 0 0.75rem;
+    }
+    .partners-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:586px) {
+    :root {
+        --box-border-radius: 8px;
+    }
+    .header .container {
+        justify-content: space-between;
+    }
+    .header-logo-img {
+        width: 8rem;
+    }
+    .burger-menu-icon {
+        display: block;
+    }
+    .navigation {
+        position: fixed;
+        width: 70%;
+        min-height: 100vh;
+        height: 100%;
+        z-index: 33;
+        top: 0;
+        right: -100%;
+        padding: 6rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        transition: all ease 0.3s;
+    }
+    .navigation.active {
+        right: 0;
+    }
+    .navigation-underlay.active {
+        display: block;
+        position: fixed;
+        z-index: 12;
+        width: 100%;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        height: 100%;
+        background-color: rgba(0,0,0,.58);
+        -webkit-backdrop-filter: blur(9px);
+                backdrop-filter: blur(9px);
+    }
+    .mob-menu-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .nav-menu-list {
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    .nav-menu-list-item {
+        margin-bottom: 1.5rem;
+    }
+    .main-heading {
+        font-size: 2rem;
+    }
+    .main-subheading {
+        font-size: 1.4rem;
+    }
+    .form-wrapper h2 {
+        font-size: 1.4rem;
+    }
+    .hero-decsription-heading {
+        font-size: 1.4rem;
+    }
+    .section-preheading {
+        font-size: 1.5rem;
+    }
+    .section-heading {
+        font-size: 1.95rem;
+    }
+    .benefit-card {
+        width:100%;
+    }
+    .partners-card-img {
+        height: 38px;
+    }
+    .partners-row {
+        margin-top: 1rem;
+    }
+    .lower-logo-img {
+        width: 12rem;
+    }
+    .lower-section-heading {
+        font-size: 1.85rem;
+    }
+    .lower-made-in {
+        margin-top: 4rem;
+        font-size: 1.2rem;
+    }
+    .usa-flag-bigger-img {
+        margin-right: 1rem;
+    }
+    .footer .container {
+        flex-direction: column;
+    }
+    .footer-policies-links {
+        margin-top: 0.6rem;
+    }
+}
